@@ -1,0 +1,135 @@
+.Comment{
+    display: flex;
+    margin: 0;   
+    .Comment__cross{
+        position: absolute;
+        top: 557%;
+    }
+    .com-circle{
+        border:vw(5)  solid   #57D2A3;
+        width: vw(20);
+        height: vw(20);   
+        border-radius: 50%;
+        margin-top: vw(249);
+        position: absolute;
+        left: vw(10);
+    }
+    .Comment__text{
+        display: block;
+        h2{
+            @include fontPlayfairDisplay(vw(36),bold,vw(50));
+            color: $text-black;
+            mix-blend-mode: normal;
+        }
+        p{
+            @include fontMulish(vw(24),normal,vw(36));
+            color: $text-black;
+            mix-blend-mode: normal;
+            max-width: vw(450);
+            flex-wrap: wrap;
+        }
+        span{       
+            @include font(vw(22),vw(900),vw(48));  
+            color: $text-black;
+            mix-blend-mode: normal;
+            position: relative;
+        &:before{
+            content: 'Founder Circle';
+            @include font(vw(20),bolder,vw(48)); 
+            color: rgb(167, 167, 167);            
+            mix-blend-mode: normal;
+            position: absolute;
+            left: 0;
+            bottom: vw(-35);
+        }
+    }
+        .Comment__text-star{
+            display:flex;
+            padding-top: vw(76);
+            // margin-top: 30px;
+            img{
+                margin-right: vw(30);
+            }
+        }
+
+    }
+    &__slider{
+        left: vw(200);
+        position: relative;
+        width: vw(425);
+        bottom: 0;
+        display: flex;
+        border-radius: vw(10);
+        &-item{
+            position: relative;
+            padding: vw(50);
+            box-sizing: border-box;
+            img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            z-index: -1;
+            border-radius: vw(10);
+            }
+            span{
+            border:vw(4)  solid   #57D2A3;
+            width: vw(20);
+            height: vw(20);   
+            border-radius: 50%;
+            position: absolute;
+            top: vw(-10);
+            right: vw(-10);
+            z-index: 200;
+            }
+        }
+    }
+}
+.slick-list{
+    border-radius: vw(10);
+    height: 140%;
+    width: 100%;
+}
+.prev,.next{
+        svg{
+            transition: 0.4s;
+            border-radius: 20px;
+            &:hover {
+                background-color: rgb(122, 161, 243) !important;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            &:active{
+                background-color: rgb(7, 80, 145) !important;
+                }
+            path , circle{
+                transition: 0.8s;
+            }
+            &:first-child{
+                &:active path /*,&:hover circle*/{
+                    transform: translateX(vw(-8));
+                }
+            }
+        }
+    }
+.next{
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+    background: $bg-white;
+    padding: vw(13);
+    z-index: 100;
+    bottom: vw(-127);
+}
+.prev{
+    position: absolute;
+    right: vw(70);
+    z-index: 1;
+    padding: vw(13);
+    background: $bg-white;
+    box-sizing: border-box;
+    min-width: vw(20);
+    border-radius:vw(7)vw(2)vw(2)vw(2);
+    min-height: vh(70);
+    bottom: vw(-127);
+}

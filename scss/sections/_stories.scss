@@ -1,0 +1,68 @@
+.Stories__row{
+    display: block;
+}
+.Stories__View{
+    display: flex;
+    align-items: center;
+    .stories__view{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: vw(620);
+    }
+    .View__title{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: bold;
+        font-size: vw(36);
+        line-height: vw(50);
+        color: #000000;
+        mix-blend-mode: normal;
+    }
+    img{
+        margin:vw(-34) vw(300);
+        position: absolute;
+        margin-bottom: vw(20);
+    }
+}
+.Stories{
+    padding-top: vw(407);
+    &:last-child{
+        padding-top: vw(180);
+    }
+}
+.Stories__gallery{
+    left: 0;
+    padding-top: vw(26);
+    .col-4{
+        margin-right: vw(25);
+        .Stories__gallery-item{
+                .Stories__description{
+                    display: block;
+                    h3{
+                        position: relative;
+                        @include font(vw(25),bold,vw(30));
+                        color: $text-black;
+                        mix-blend-mode: normal;
+                
+                    }
+                    .Stories__link{
+                        @include font(vw(20),600,vw(28));
+                        color:$text-orange;
+                        text-decoration: none;
+                        /*flex-direction: column;
+                        flex-wrap: wrap;*/
+                        display: flex;
+                    }
+                }
+                img{
+                border-radius: vw(8) vw(8) 0 0;
+                width: vw(284);
+                height: vw(330);
+                }
+            
+            
+        }
+    }
+}

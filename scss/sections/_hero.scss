@@ -1,0 +1,91 @@
+$explo-blk: #0000;
+.hero{
+	display: flex;
+}
+.Explore-cross{
+	position: absolute;
+	margin-right: vw(300);
+	width: vw(41);
+	height: vw(41);
+	margin-left: 39%;
+	margin-top: 0;
+	top: vw(145);
+}
+.Explore{
+	display: block;
+	position: relative;
+	padding-top: vw(100);
+	&:last-child{
+		margin-left: vw(170);
+	}
+	h1{
+		font-family: 'Playfair Display';
+		font-style: normal;
+		@include font(vw(64),bold,vw(80));
+        /*bold,64px,80px*/
+		color:$text-black;
+		mix-blend-mode: normal;
+		z-index: 100;
+		margin-bottom: vw(70);
+	}
+	h2{
+		@include font(vw(22),vw(900),vw(10));
+		color:$text-black;
+		position: relative;
+		&::before{
+		content: '';
+		height: vw(3);
+		width: 4%;
+		position: absolute;
+		bottom: vw(-10);
+		left: 0;
+		background: black;
+		border-radius: 20%;
+		}
+  }
+  .Explore__form{
+	  max-width: 500px;
+	  flex-wrap: wrap;
+	  select{
+		border: 0.8px solid #AFB0B9;
+		box-sizing: border-box;
+		border-radius: 6px;
+		width: 220px;
+		height: 52px;
+		margin-top: 10px;
+        @include font(15px,normal,32px);
+       /*15px,32px*/
+		color: #4A4C53;
+		mix-blend-mode: normal;
+		outline: none;
+	  }
+	  button{
+		background:$bg-orange;
+		border: none;
+		border-radius: 8px;
+		font-family: 'Mulish';
+		font-style: normal;
+		@include font(18px,bold);
+        /*bold,17px,60px.*/
+		color: $text-white;
+		mix-blend-mode: normal;
+		width: 180px;
+		height: 52px;
+		padding: 0;
+		top: 51px;
+	    position: relative;
+		transition: 0.5s;
+		cursor: pointer;
+		&:hover{
+			background: lighten($bg-orange , 10%);
+		}
+	  }
+  }
+	
+}
+.travel-img{	
+		position: absolute;
+		right: vw(105);
+		bottom: 0;
+		height: vw(500);
+}
