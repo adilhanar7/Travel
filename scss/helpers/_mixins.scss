@@ -1,4 +1,4 @@
-@mixin  font($size,$weight,$ln-height) {
+@mixin  font($size,$weight,$ln-height:vw(25)) {
     font-family: 'Inter';
 	font-style: normal;
 	font-weight: $weight;

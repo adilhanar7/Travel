@@ -62,17 +62,17 @@ $explo-blk: #0000;
 	  button{
 		background:$bg-orange;
 		border: none;
-		border-radius: 8px;
+		border-radius: vw(8);
 		font-family: 'Mulish';
 		font-style: normal;
-		@include font(18px,bold);
+		@include font(vw(18),bold,vw(25));
         /*bold,17px,60px.*/
 		color: $text-white;
 		mix-blend-mode: normal;
-		width: 180px;
-		height: 52px;
+		width: vw(180);
+		height: vw(52);
 		padding: 0;
-		top: 51px;
+		top: vw(51);
 	    position: relative;
 		transition: 0.5s;
 		cursor: pointer;

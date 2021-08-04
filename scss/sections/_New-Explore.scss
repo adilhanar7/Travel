@@ -35,7 +35,7 @@
             flex-wrap: wrap;
         }
         button{
-            @include font(vw(20),vw(600),);
+            @include font(vw(20),vw(600),vw(25));
             background:$bg-orange ;
             border-radius: vw(8);
             border: 0;

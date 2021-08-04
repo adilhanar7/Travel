@@ -25,49 +25,49 @@
 @font-face {
   font-family: 'Mulish';
   font-weight: 700;
-  src: url("../../fonts/Mulish/Mulish-Bold.woff") format("woff");
+  src: url("../fonts/Mulish/Mulish-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Mulish';
   font-weight: 600;
-  src: url("../../fonts/Mulish/Mulish-Medium.woff") format("woff");
+  src: url("../fonts/Mulish/Mulish-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Mulish';
   font-weight: 500;
-  src: url("../../fonts/Mulish/Mulish-Regular.woff") format("woff");
+  src: url("../fonts/Mulish/Mulish-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Mulish';
   font-weight: 400;
-  src: url("../../fonts/Mulish/Mulish-SemiBold.woff") format("woff");
+  src: url("../fonts/Mulish/Mulish-SemiBold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Playfair Display';
   font-weight: 700;
-  src: url("../../fonts/Playfair Display/PlayfairDisplay-Bold.woff") format("woff");
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Playfair Display';
   font-weight: 600;
-  src: url("../../fonts/Playfair Display/PlayfairDisplay-Medium.woff") format("woff");
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Playfair Display';
   font-weight: 500;
-  src: url("../../fonts/Playfair Display/PlayfairDisplay-Regular.woff") format("woff");
+  src: url("../fonts/Playfair Display/PlayfairDisplay-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Playfair Display';
   font-weight: 400;
-  src: url("../../fonts/Playfair Display/PlayfairDisplay-SemiBold.woff") format("woff");
+  src: url("../fonts/Playfair Display/PlayfairDisplay-SemiBold.woff") format("woff");
 }
 
 .header {
@@ -132,8 +132,10 @@
           box-sizing: border-box;
   border-radius: 0.5vw;
   font-family: 'Inter';
+  font-style: normal;
   font-weight: 31.25vw;
   font-size: 1.25vw;
+  line-height: 1.5625vw;
   color: #FB8F1D;
   width: 8.25vw;
   height: 2.75vw;
@@ -147,8 +149,10 @@
           box-sizing: border-box;
   border-radius: 0.5vw;
   font-family: 'Inter';
+  font-style: normal;
   font-weight: 31.25vw;
   font-size: 1.25vw;
+  line-height: 1.5625vw;
   color: #ffffff;
   width: 8.25vw;
   height: 2.75vw;
@@ -288,6 +292,8 @@
 .Explore h1 {
   font-family: 'Playfair Display';
   font-style: normal;
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: bold;
   font-size: 4vw;
   line-height: 5vw;
@@ -347,18 +353,21 @@
 .Explore .Explore__form button {
   background: #FB8F1D;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5vw;
   font-family: 'Mulish';
   font-style: normal;
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125vw;
+  line-height: 1.5625vw;
   /*bold,17px,60px.*/
   color: #ffffff;
   mix-blend-mode: normal;
-  width: 180px;
-  height: 52px;
+  width: 11.25vw;
+  height: 3.25vw;
   padding: 0;
-  top: 51px;
+  top: 3.1875vw;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -434,8 +443,10 @@
 
 .New-Explore .New-Explore__h2-p button {
   font-family: 'Inter';
+  font-style: normal;
   font-weight: 37.5vw;
   font-size: 1.25vw;
+  line-height: 1.5625vw;
   background: #FB8F1D;
   border-radius: 0.5vw;
   border: 0;
@@ -533,8 +544,11 @@
   width: 1.1875vw;
   height: 1.25vw;
   border-radius: 50%;
-  bottom: 31.25vw;
+  bottom: -1.875vw;
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .Thousand .Thousand__Download-stn h2 {
@@ -560,8 +574,10 @@
 
 .Thousand .Thousand__Download-stn button {
   font-family: 'Inter';
+  font-style: normal;
   font-weight: 600;
   font-size: 1vw;
+  line-height: 1.5625vw;
   background: #FB8F1D;
   border-radius: 0.5vw;
   color: #ffffff;
