@@ -100,7 +100,7 @@
   display: flex;
 }
 
-.nav__item {
+.nav__list-item {
   font-family: 'Inter';
   font-style: normal;
   font-weight: normal;
@@ -110,14 +110,14 @@
   margin-right: 2.125vw;
 }
 
-.nav__item:first-child {
+.nav__list-item:first-child {
   margin-right: 2.125vw;
   font-family: 'Inter';
   font-style: normal;
   font-weight: normal;
   font-size: 1.25vw;
   line-height: 1.1875vw;
-  color: #000000;
+  color: black;
 }
 
 .header__reg-log {
@@ -143,6 +143,10 @@
   margin-right: 18px;
 }
 
+.header__reg-log button:first-child:hover {
+  background: white;
+}
+
 .header__reg-log button:last-child {
   border: none;
   -webkit-box-sizing: border-box;
@@ -157,6 +161,10 @@
   width: 8.25vw;
   height: 2.75vw;
   background: #FB8F1D;
+}
+
+.header__reg-log button:last-child:hover {
+  background: #fca84f;
 }
 
 .footer {
@@ -455,6 +463,10 @@
   height: 2.5vw;
 }
 
+.New-Explore .New-Explore__h2-p button:hover {
+  background: #fca84f;
+}
+
 .destinations {
   margin: 0;
   display: block;
@@ -584,6 +596,10 @@
   border: none;
   width: 10.25vw;
   height: 3vw;
+}
+
+.Thousand .Thousand__Download-stn button:hover {
+  background: #fca84f;
 }
 
 .Thousand .Thousand__Download-stn-img {

@@ -42,6 +42,9 @@
             color: $text-white;
             width: vw(150);
             height: vw(40);
+            &:hover{
+                background: lighten($bg-orange , 10%);
+            }
         }
 
     }
