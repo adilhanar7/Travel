@@ -18,6 +18,8 @@
         }
         .col-4{
             transition: 0.5s;
+            height: vw(332);
+            width: vw(261);
             &:hover{
                 // box-shadow:vw(10)vw(15)vw(10) $bs-black;
                 transform: translateY(vw(-30));
@@ -28,6 +30,8 @@
                 img{
                     border-radius: vw(6) vw(6) vw(6) vw(6) ;
                     margin: 0 vw(20);
+                    height: vw(332);
+                    width: vw(261);
                 }
                 p{
                     @include fontInter(vw(17),vw(600),vw(25));

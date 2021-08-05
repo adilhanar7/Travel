@@ -38,9 +38,9 @@
         .Comment__text-star{
             display:flex;
             padding-top: vw(76);
-            // margin-top: 30px;
             img{
                 margin-right: vw(30);
+                cursor: pointer;
             }
         }
 
@@ -56,6 +56,8 @@
             position: relative;
             padding: vw(50);
             box-sizing: border-box;
+            height: vw(491);
+            width: vw(384);
             img{
             position: absolute;
             left: 0;
@@ -63,6 +65,8 @@
             margin: 0;
             z-index: -1;
             border-radius: vw(10);
+            height: vw(491);
+            width: vw(384);
             }
             span{
             border:vw(4)  solid   #57D2A3;
