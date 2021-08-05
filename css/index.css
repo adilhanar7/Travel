@@ -137,6 +137,7 @@
   background: #fff8f0;
   margin-right: 0.9375vw;
   cursor: pointer;
+  z-index: 2;
 }
 
 .header .header__row .header__reg-log button:first-child:hover {
@@ -156,6 +157,7 @@
   color: #ffffff;
   width: 8.25vw;
   height: 2.75vw;
+  z-index: 2;
   background: #FB8F1D;
 }
 
@@ -617,14 +619,14 @@
   content: 'Founder Circle';
   font-family: 'Inter';
   font-style: normal;
-  font-weight: bolder;
+  font-weight: normal;
   font-size: 1.25vw;
   line-height: 3vw;
   color: #a7a7a7;
   mix-blend-mode: normal;
   position: absolute;
   left: 0;
-  bottom: -2.1875vw;
+  bottom: -2.5vw;
 }
 
 .Comment .Comment__text .Comment__text-star {
