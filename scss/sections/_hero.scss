@@ -1,6 +1,13 @@
-$explo-blk: #0000;
 .hero{
 	display: flex;
+	align-items: center;
+	position: relative;
+	.circle{
+     position: absolute;
+	 transform: translateX(-50%);
+	 left: 50%;
+	 bottom: 0;
+	}
 }
 .Explore-cross{
 	position: absolute;
@@ -15,13 +22,18 @@ $explo-blk: #0000;
 	display: block;
 	position: relative;
 	padding-top: vw(100);
+	.circle{
+		position: absolute;
+		left: vw(-60);
+		top: 60%;
+	}
 	&:last-child{
 		margin-left: vw(170);
 	}
 	h1{
 		font-family: 'Playfair Display';
 		font-style: normal;
-		@include font(vw(64),bold,vw(80));
+		@include fontInter(vw(64),bold,vw(80));
         /*bold,64px,80px*/
 		color:$text-black;
 		mix-blend-mode: normal;
@@ -29,35 +41,53 @@ $explo-blk: #0000;
 		margin-bottom: vw(70);
 	}
 	h2{
-		@include font(vw(22),vw(900),vw(10));
+		@include fontInter(vw(22),vw(900),vw(10));
 		color:$text-black;
 		position: relative;
 		&::before{
 		content: '';
 		height: vw(3);
-		width: 4%;
+		width: 6%;
 		position: absolute;
-		bottom: vw(-10);
+		bottom: vw(-30);
 		left: 0;
 		background: black;
 		border-radius: 20%;
+		animation: line-before 3s ease-in-out forwards;
+		}
+		@keyframes line-before  {
+			0%{
+				width: 2%;
+			}
+			50%{
+				width: 25%;
+			}
+			100%{
+				width: 7%;
+			}
 		}
   }
   .Explore__form{
-	  max-width: 500px;
+	  max-width: vw(500);
 	  flex-wrap: wrap;
+	  margin-top: vw(50);
 	  select{
-		border: 0.8px solid #AFB0B9;
+		&:first-child,&:nth-child(3){
+			margin-left: vw(0);
+		}
+		padding: vw(10);
+		border: vw(0.8) solid #AFB0B9;
 		box-sizing: border-box;
-		border-radius: 6px;
-		width: 220px;
-		height: 52px;
-		margin-top: 10px;
-        @include font(15px,normal,32px);
-       /*15px,32px*/
+		border-radius: vw(6);
+		width: vw(220);
+		height: vw(52);
+		margin-top: vw(20);
+		margin-left: vw(20);
+        @include fontInter(vw(15),normal,vw(32));
 		color: #4A4C53;
 		mix-blend-mode: normal;
 		outline: none;
+		overflow: auto;
 	  }
 	  button{
 		background:$bg-orange;
@@ -65,7 +95,7 @@ $explo-blk: #0000;
 		border-radius: vw(8);
 		font-family: 'Mulish';
 		font-style: normal;
-		@include font(vw(18),bold,vw(25));
+		@include fontInter(vw(18),bold,vw(25));
         /*bold,17px,60px.*/
 		color: $text-white;
 		mix-blend-mode: normal;
@@ -81,11 +111,10 @@ $explo-blk: #0000;
 		}
 	  }
   }
-	
 }
 .travel-img{	
 		position: absolute;
-		right: vw(105);
-		bottom: 0;
-		height: vw(500);
+		bottom: -20%;
+		right: 0;
+		height: vw(600);
 }

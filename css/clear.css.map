@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,MADI,CACJ,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,IAAI;CACd;;AAJH,AAME,MANI,CAMJ,CAAC,CAAC;EACA,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,IAAI;CACtB;;AATH,AAWE,MAXI,CAWJ,EAAE,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,eAAe,EAAE,IAAI;CACtB;;AAfH,AAiBE,MAjBI,CAiBJ,EAAE,CAAC;EACD,eAAe,EAAE,IAAI;CACtB",
+    "sources": [
+        "../node_modules/macro-css/src/clear.scss"
+    ],
+    "names": [],
+    "file": "clear.css"
+}

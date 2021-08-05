@@ -26,39 +26,53 @@ body{
     max-width: 1110px;
     margin: 0 auto;
 }
-
 .col-4{
-    max-width: 25%;
+    width: 25%;
 }
-.View__title{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 50px;
-    color: #000000;
-    mix-blend-mode: normal;
+.View-all{
+    @include flex(flex-start);
+    .View__title{
+        @include fontPlayfairDisplay(vw(36),bold,vw(50));
+        color: $text-black;
+        mix-blend-mode: normal;
+    }
+    .View__link{
+        @include fontInter(vw(17),vw(600),vw(60));
+        align-items: center;
+        display: flex;
+        color:$text-orange;
+        mix-blend-mode: normal;
+        cursor: pointer;
+        margin-left: 60%;
+        svg{
+          margin-left: vw(13);  
+        }
+    }
 }
-.View {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 60px;
-    display: flex;
+.View__link{
+    position: absolute !important;
+    bottom: 105% !important;
+    @include fontInter(vw(17),vw(600),vw(60));
     align-items: center;
+    display: flex;
     color:$text-orange;
     mix-blend-mode: normal;
     cursor: pointer;
+    margin-left: 90%!important;
     svg{
-      margin: 13px;  
+        margin-left: vw(13);  
     }
 }
+.circle{
+    border:vw(8) solid    #57D2A3;
+    width: vw(20);
+    height: vw(20);   
+    border-radius: 50%;
+}
 .text{
-    @include font(vw(15),normal,vw(26));
-    color: #7D7987;
+    @include fontInter(vw(15),normal,vw(26));
+    color: $text-gray-blue79;
     mix-blend-mode: normal;
-    max-width: vw(100);
     position: relative;
 }
 a{
@@ -66,4 +80,32 @@ a{
 }
 button{
     cursor: pointer;
+}
+
+.Interest {
+    max-width: vw(400);
+    h2{
+    @include fontPlayfairDisplay(vw(36),bold,vw(50));
+    color: $text-black;
+    mix-blend-mode: normal;
+    }
+    p{
+        @include fontMulish(vw(17),vw(300),vw(30));
+        color: $text-gray-blue79;
+        max-width: vw(370);
+        flex-wrap: wrap;
+    }
+    button{
+        @include fontInter(vw(20),vw(600),vw(25));
+        background:$bg-orange ;
+        border-radius: vw(8);
+        border: 0;
+        color: $text-white;
+        width: vw(150);
+        height: vw(40);
+        &:hover{
+            background: lighten($bg-orange , 10%);
+        }
+    }
+
 }
