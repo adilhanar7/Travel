@@ -81,7 +81,18 @@ a{
 button{
     cursor: pointer;
 }
-
+.orange-btn{
+    @include fontInter(vw(20),vw(600),vw(25));
+    background:$bg-orange ;
+    border-radius: vw(8);
+    border: 0;
+    color: $text-white;
+    width: vw(150);
+    height: vw(40);
+    &:hover{
+        background: lighten($bg-orange , 10%);
+    }
+}
 .Interest {
     max-width: vw(400);
     h2{
@@ -95,17 +106,4 @@ button{
         max-width: vw(370);
         flex-wrap: wrap;
     }
-    button{
-        @include fontInter(vw(20),vw(600),vw(25));
-        background:$bg-orange ;
-        border-radius: vw(8);
-        border: 0;
-        color: $text-white;
-        width: vw(150);
-        height: vw(40);
-        &:hover{
-            background: lighten($bg-orange , 10%);
-        }
-    }
-
 }

@@ -929,6 +929,24 @@ button {
   cursor: pointer;
 }
 
+.orange-btn {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 37.5vw;
+  font-size: 1.25vw;
+  line-height: 1.5625vw;
+  background: #FB8F1D;
+  border-radius: 0.5vw;
+  border: 0;
+  color: #ffffff;
+  width: 9.375vw;
+  height: 2.5vw;
+}
+
+.orange-btn:hover {
+  background: #fca84f;
+}
+
 .Interest {
   max-width: 25vw;
 }
@@ -951,23 +969,5 @@ button {
   max-width: 23.125vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.Interest button {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 37.5vw;
-  font-size: 1.25vw;
-  line-height: 1.5625vw;
-  background: #FB8F1D;
-  border-radius: 0.5vw;
-  border: 0;
-  color: #ffffff;
-  width: 9.375vw;
-  height: 2.5vw;
-}
-
-.Interest button:hover {
-  background: #fca84f;
 }
 /*# sourceMappingURL=index.css.map */
