@@ -137,6 +137,7 @@
   background: #fff8f0;
   margin-right: 0.9375vw;
   cursor: pointer;
+  z-index: 2;
 }
 
 .header .header__row .header__reg-log button:first-child:hover {
@@ -156,6 +157,7 @@
   color: #ffffff;
   width: 8.25vw;
   height: 2.75vw;
+  z-index: 2;
   background: #FB8F1D;
 }
 
