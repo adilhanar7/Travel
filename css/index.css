@@ -617,14 +617,14 @@
   content: 'Founder Circle';
   font-family: 'Inter';
   font-style: normal;
-  font-weight: bolder;
+  font-weight: normal;
   font-size: 1.25vw;
   line-height: 3vw;
   color: #a7a7a7;
   mix-blend-mode: normal;
   position: absolute;
   left: 0;
-  bottom: -2.1875vw;
+  bottom: -2.5vw;
 }
 
 .Comment .Comment__text .Comment__text-star {

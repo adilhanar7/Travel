@@ -33,11 +33,11 @@
 				color:$text-orange;
 				width: vw(132);
 				height: vw(44);
-				background: #fff8f0;
+				background: $bg-white80;
 				margin-right: vw(15);
 				cursor: pointer;
 				&:hover{
-					background: lighten(#fff8f0 , 10%);
+					background: lighten($bg-white80 , 10%);
 				}
 			}
 			button:last-child{

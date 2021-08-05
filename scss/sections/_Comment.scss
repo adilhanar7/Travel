@@ -27,12 +27,12 @@
             position: relative;
         &:before{
             content: 'Founder Circle';
-            @include fontInter(vw(20),bolder,vw(48)); 
+            @include fontInter(vw(20),normal,vw(48)); 
             color: rgb(167, 167, 167);            
             mix-blend-mode: normal;
             position: absolute;
             left: 0;
-            bottom: vw(-35);
+            bottom: vw(-40);
         }
     }
         .Comment__text-star{
