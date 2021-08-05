@@ -1,7 +1,7 @@
 @import './helpers/mixins';
 @import'./helpers/functions';
 @import'./helpers/variables';
-@import './helpers/fonts';
+@import '../scss/helpers/fonts';
 
 @import './components/header';
 @import './components/footer';
