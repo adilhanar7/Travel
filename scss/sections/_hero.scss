@@ -88,6 +88,7 @@
 		mix-blend-mode: normal;
 		outline: none;
 		overflow: auto;
+		cursor: pointer;
 	  }
 	  button{
 		background:$bg-orange;
@@ -117,4 +118,5 @@
 		bottom: -20%;
 		right: 0;
 		height: vw(600);
+		width: vw(550);
 }

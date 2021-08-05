@@ -103,6 +103,14 @@
   line-height: 1.1875vw;
   color: #B8BECD;
   margin-right: 2.125vw;
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.header .header__row .nav__list-item:hover {
+  color: #6b88cf;
 }
 
 .header .header__row .nav__list-item:first-child {
@@ -113,6 +121,13 @@
   font-size: 1.25vw;
   line-height: 1.1875vw;
   color: black;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  z-index: 2;
+}
+
+.header .header__row .nav__list-item:first-child:hover {
+  color: #777676;
 }
 
 .header .header__row .header__reg-log {
@@ -401,6 +416,7 @@
   mix-blend-mode: normal;
   outline: none;
   overflow: auto;
+  cursor: pointer;
 }
 
 .Explore .Explore__form select:first-child, .Explore .Explore__form select:nth-child(3) {
@@ -440,6 +456,7 @@
   bottom: -20%;
   right: 0;
   height: 37.5vw;
+  width: 34.375vw;
 }
 
 .New-Explore {
@@ -501,6 +518,8 @@
 .destinations .row .col-4 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  height: 20.75vw;
+  width: 16.3125vw;
 }
 
 .destinations .row .col-4:hover {
@@ -516,6 +535,8 @@
 .destinations .row .col-4 .destinations-item img {
   border-radius: 0.375vw 0.375vw 0.375vw 0.375vw;
   margin: 0 1.25vw;
+  height: 20.75vw;
+  width: 16.3125vw;
 }
 
 .destinations .row .col-4 .destinations-item p {
@@ -564,6 +585,11 @@
 .Thousand .Interest {
   display: block;
   margin: 12.5vw 0;
+}
+
+.Thousand .Thousand__image {
+  height: 33.875vw;
+  width: 37.4375vw;
 }
 
 .Comment {
@@ -638,6 +664,7 @@
 
 .Comment .Comment__text .Comment__text-star img {
   margin-right: 1.875vw;
+  cursor: pointer;
 }
 
 .Comment__slider {
@@ -656,6 +683,8 @@
   padding: 3.125vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 30.6875vw;
+  width: 24vw;
 }
 
 .Comment__slider-item img {
@@ -665,6 +694,8 @@
   margin: 0;
   z-index: -1;
   border-radius: 0.625vw;
+  height: 30.6875vw;
+  width: 24vw;
 }
 
 .Comment__slider-item span {
@@ -830,7 +861,7 @@ body {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 75.625vw;
   margin: 0 auto;
 }
 
