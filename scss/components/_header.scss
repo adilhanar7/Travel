@@ -6,56 +6,53 @@
 	.header__row{
 		top: vw(45);
 		display: flex;
-		justify-content: space-between;
-		
-	}
-}
-.nav{
-	left: vw(200);
-	position: relative;
-	&__list{
-		list-style-type: none;
-		list-style: none;
-		display: flex;
-		&-item{
-			@include font(vw(20),normal,vw(19));
-			color: #B8BECD;
-			margin-right: vw(34);
+		.nav{
+			margin-left: vw(400);
+			&__list{
+				list-style-type: none;
+				display: flex;
+				&-item{
+					@include fontInter(vw(20),normal,vw(19));
+					color: #B8BECD;
+					margin-right: vw(34);
+				}
+				&-item:first-child{
+					margin-right: vw(34);
+					@include fontInter(vw(20),normal,vw(19));
+					color: $text-black;
+				}
+			}
 		}
-		&-item:first-child{
-			margin-right: vw(34);
-			@include font(vw(20),normal,vw(19));
-			color: $text-black;
-		}
-	}
-}
-.header__reg-log{
-	display: flex;
-	button:first-child{
-		border: vw(3) solid #FB8F1D;
-		box-sizing: border-box;
-		border-radius: vw(8);
-		@include font(vw(20),vw(500),vw(25));
-		color:$text-orange;
-		width: vw(132);
-		height: vw(44);
-		background: #fff8f0;
-		margin-right: 18px;
-		&:hover{
-			background: lighten(#fff8f0 , 10%);
-		}
-	}
-	button:last-child{
-		border: none;
-		box-sizing: border-box;
-		border-radius: vw(8);
-		@include font(vw(20),vw(500),vw(25));
-		color: $text-white;
-		width: vw(132);
-		height: vw(44);
-		background:$bg-orange;
-		&:hover{
-			background: lighten($bg-orange , 10%);
+		.header__reg-log{
+			display: flex;
+			button:first-child{
+				border: vw(3) solid #FB8F1D;
+				box-sizing: border-box;
+				border-radius: vw(8);
+				@include fontInter(vw(20),vw(500),vw(25));
+				color:$text-orange;
+				width: vw(132);
+				height: vw(44);
+				background: #fff8f0;
+				margin-right: vw(15);
+				cursor: pointer;
+				&:hover{
+					background: lighten(#fff8f0 , 10%);
+				}
+			}
+			button:last-child{
+				border: none;
+				box-sizing: border-box;
+				border-radius: vw(8);
+				@include fontInter(vw(20),vw(500),vw(25));
+				color: $text-white;
+				width: vw(132);
+				height: vw(44);
+				background:$bg-orange;
+				&:hover{
+					background: lighten($bg-orange , 10%);
+				}
+			}
 		}
 	}
 }

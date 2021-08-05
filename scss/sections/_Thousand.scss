@@ -1,46 +1,8 @@
 .Thousand{
     display:flex;
-    
-    .Thousand__Download-stn{
+    justify-content: space-between;
+    .Interest{
         display: block;
         margin: vw(200) 0;
-        span{
-            border:vw(4) solid   #57D2A3;
-            width: vw(19);
-            height: vw(20);   
-            border-radius: 50%;
-            bottom: vw(-30);
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            }
-        h2{
-            @include fontPlayfairDisplay(vw(36),bold,vw(50));
-            color: $text-black;
-            mix-blend-mode: normal;
-        }
-        p{
-            @include fontMulish(vw(17),300,vw(30));
-            color: $text-gray-blue79;
-            mix-blend-mode: normal;
-            max-width: vw(400);
-            flex-wrap: wrap;
-        }
-        button{
-            @include font(vw(16),600);
-            background:$bg-orange ;
-            border-radius: vw(8);
-            color: $text-white;
-            border: none;
-            width: vw(164);
-            height: vw(48);
-            &:hover{
-                background: lighten($bg-orange , 10%);
-            }
-        }
-    }
-    .Thousand__Download-stn-img{
-        position: absolute;
-        right: vw(100);
     }
 }

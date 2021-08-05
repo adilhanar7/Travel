@@ -1,4 +1,4 @@
-@mixin  font($size,$weight,$ln-height:vw(25)) {
+@mixin  fontInter($size,$weight,$ln-height:vw(25)) {
     font-family: 'Inter';
 	font-style: normal;
 	font-weight: $weight;
@@ -17,8 +17,8 @@
     font-size: $size;
     line-height: $ln-height;
 }
-@mixin flex(){
+@mixin flex($justify:center){
     align-items: center;
-    justify-content: center;
+    justify-content: $justify;
     display: flex;
 }

@@ -7,45 +7,16 @@
     img{
         height: vw(500);        
     }
-    span{
-        border:vw(3)  solid   #57D2A3;
-        width: vw(19);
-        height: vw(20);   
-        border-radius: 50%;
+    .circle{
         position: relative;
         top: vw(280);
         left: vw(310);
-        }
-    .New-Explore__h2-p {
-        left: vw(650);
-        align-items: flex-end;
-        max-width: vw(400);
-        flex-wrap: wrap;
-        display: block;
-        position: absolute;
-        h2{
-        @include fontPlayfairDisplay(vw(36),bold,vw(50));
-        color: $text-black;
-        mix-blend-mode: normal;
-        }
-        p{
-            @include fontMulish(vw(17),vw(300),vw(30));
-            color: $text-gray-blue79;
-            max-width: vw(370);
-            flex-wrap: wrap;
-        }
-        button{
-            @include font(vw(20),vw(600),vw(25));
-            background:$bg-orange ;
-            border-radius: vw(8);
-            border: 0;
-            color: $text-white;
-            width: vw(150);
-            height: vw(40);
-            &:hover{
-                background: lighten($bg-orange , 10%);
-            }
-        }
-
+    }
+    .Interest{
+    left: vw(650);
+    align-items: flex-end;
+    flex-wrap: wrap;
+    display: block;
+    position: absolute;
     }
 }

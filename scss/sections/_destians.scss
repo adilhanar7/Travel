@@ -1,55 +1,57 @@
 .destinations{
-    margin: 0;
     display: block;
-    .destinatons__circle{
-        border:vw(4)  solid   #57D2A3;
-        width: vw(19);
-        height: vw(20);   
-        border-radius: 50%;
-        right: vw(600);
-        position: absolute;
-    }
-    .destinations__view{
-        position:relative;
-        left: vw(620);
-        bottom: vw(-19);
-    }
-    .destinations__destinations-all{
-        display: flex;
-        .destinations__circle{
-            border:vw(8) solid   #57D2A3;
-            width: vw(20);
-            height: vw(20);   
-            border-radius: 50%;
+    margin-bottom: vw(100);
+    .View-all{
+        position: relative;
+        .circle{
+            bottom: vw(80);
+            right: 15%;
             position: absolute;
-            margin: vw(-50);
-            top: vw(50);
-            }  
-    }
-    .destinations__gallery{
-        display: flex;
-        .destinations__imges-item{
-            
-        img{
-            background: $bg-white;
-            border-radius: vw(6) vw(6) vw(6) vw(6) ;
-            margin: 0 vw(20);
-        }
-        span{
-            @include font(vw(17),vw(600),vw(25));
-            display: flex;
-            align-items: center;
-            color: $text-green04;
-            mix-blend-mode: normal;
-            background: $text-white ;
-            max-width: vw(140);
-            height: vw(65);
-            border-radius: vw(6) vw(6) vw(6) vw(6);
-            bottom: vw(60);
-            left: vw(17);
-            position: relative;
-            flex-wrap: wrap;
         }
     }
+    .row{
+        margin: 0 !important;
+        .dest-cross{
+            margin: 0;
+            width: vw(50);
+            height: vw(50);
+        }
+        .col-4{
+            transition: 0.5s;
+            &:hover{
+                // box-shadow:vw(10)vw(15)vw(10) $bs-black;
+                transform: translateY(vw(-30));
+            }
+            .destinations-item{
+                height: vw(332);
+                width: vw(281);
+                img{
+                    border-radius: vw(6) vw(6) vw(6) vw(6) ;
+                    margin: 0 vw(20);
+                }
+                p{
+                    @include fontInter(vw(17),vw(600),vw(25));
+                    display: flex;
+                    align-items: center;
+                    color: $text-green04;
+                    mix-blend-mode: normal;
+                    background: $bg-white;
+                    max-width: vw(140);
+                    padding: vw(12);
+                    border-radius: vw(6) vw(6) vw(6) vw(6);
+                    bottom: vw(90);
+                    left: vw(17);
+                    position: relative;
+                    flex-wrap: wrap;
+                    span{
+                        color: $text-gray;
+                    }
+                }
+        }
+    }
+  }
+  .slick-list{
+      height: vw(450);
+      padding: vw(50) 0;
   }
 }
