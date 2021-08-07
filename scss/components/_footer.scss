@@ -49,10 +49,6 @@
        .footer__description{
         display: block;
         &-text{
-            // margin-right: vw(108);
-            // justify-content: right;
-            // display: inline-block;
-            // align-items: stretch;
             position: relative;
             right: vw(80);
         }
@@ -76,4 +72,85 @@
         }
       }
     }
+}
+
+
+.footer{
+    @include mobile(){
+        background-color: $bg-gray;
+        width: 100%;
+        height: vmin(410);
+        margin-top: vmin(200);
+        position: relative;
+        &__bottom{
+            position: relative;
+            &-icons{
+                position: absolute;
+                left: 50%;
+                margin-top: 2%;
+                transform: translateX(-50%); 
+                flex-wrap: nowrap;
+                a:last-child:hover svg path{ 
+                        fill: red;
+                }
+                a:first-child:hover svg  path{ 
+                            fill: rgb(43, 189, 247);
+                }
+                a:nth-child(2):hover svg path{ 
+                        fill: rgb(47, 0, 255);
+                }
+                a:nth-child(3):hover svg path{ 
+                    fill: rgb(255, 82, 148);
+                    background-color: rgb(2, 34, 177);
+                }
+                a:nth-child(4):hover svg  path{ 
+                    fill: rgb(252, 238, 51);
+                 }
+                 a{
+                    svg{
+                        padding-left: vmin(35);
+                    path{
+                        transition: 0.5s;
+                    }
+                    }
+                }
+            } 
+        }
+        &__row{
+        padding: vmin(78) 0;
+        display: block;
+        &:last-child{
+            padding: vmin(33) 0;  
+          }
+        }
+        &__top{
+           display: flex;
+           flex-direction: column;
+           .footer__description{
+            display: block;
+            &-text{
+                position: relative;
+                right: vmin(80);
+            }
+          }
+          .footer__features{  
+            margin-left: vmin(0);
+            display: flex;
+            .footer__list{
+                list-style-type: none;
+                margin-left: vmin(100);
+                &-item:first-child span:first-child{   
+                    padding-top: vmin(56);
+                    color: $text-black;
+                    @include fontMulish(vmin(19),bold,vmin(60));
+                    font-style: normal;
+                }
+                &-item span{
+                 color: $text-gray;
+                 @include fontMulish(vmin(18),300,vmin(30));
+                }
+            }
+          }
+        }
+    };
 }

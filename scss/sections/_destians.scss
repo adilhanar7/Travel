@@ -59,3 +59,67 @@
       padding: vw(50) 0;
   }
 }
+
+
+.destinations{
+    @include mobile(){
+        display: block;
+        margin-bottom: vmin(20);
+        .View-all{
+            position: relative;
+            .circle{
+                bottom: vmin(80);
+                right: 15%;
+                position: absolute;
+            }
+        }
+        .row{
+            margin: 0 !important;
+            .dest-cross{
+                margin: 0;
+                width: vmin(50);
+                height: vmin(50);
+            }
+            .col-4{
+                transition: 0.5s;
+                height: vmin(300);
+                width: vmin(261);
+                &:hover{
+                    transform: translateY(vmin(-30));
+                }
+                .destinations-item{
+                    height: vmin(332);
+                    width: vmin(281);
+                    img{
+                        border-radius: vmin(6);
+                        margin: 0 vmin(20);
+                        height: vmin(332);
+                        width: vmin(261);
+                    }
+                    p{
+                        @include fontInter(vmin(17),vmin(600),vmin(25));
+                        display: flex;
+                        align-items: center;
+                        color: $text-green04;
+                        mix-blend-mode: normal;
+                        background: $bg-white;
+                        max-width: vmin(140);
+                        padding: vmin(12);
+                        border-radius: vmin(6);
+                        bottom: vmin(90);
+                        left: vmin(17);
+                        position: relative;
+                        flex-wrap: wrap;
+                        span{
+                            color: $text-gray;
+                        }
+                    }
+            }
+        }
+      }
+      .slick-list{
+          height: vw(1500);
+          padding: vw(500) 0;
+      }
+    };
+}

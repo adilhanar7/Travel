@@ -132,18 +132,38 @@
 		.burger{
 			order: 3;
 			margin-left: vmin(100);
+			transition: all 0.6s ease-in-out;
+			cursor: pointer;
+			img{
+				width: vmin(50);
+			    height: vmin(50);
+			}
 		}
 		.nav{
 			order: 1;
 			position: absolute;
 			top: vmin(89);
 			padding-top: vmin(50);
-			height: 100%;
-			width: 90%;
+			height: 100vh;
+			width: 100%;
 			left: 200%;
 			background-color: $bg-white80;
 			z-index: -1;
 			transition: 0.6s;
+		}
+		.burger.active{
+				animation: burgerActive 0.6s ease-in-out forwards;
+		}
+		@keyframes burgerActive {
+			0%{
+             margin-bottom: vmin(0);
+			}
+			50%{
+				margin-bottom: vmin(30);
+			}
+			100%{
+				margin-bottom: vmin(0);
+			}
 		}
 		.nav.active{
 			transition: 0.6s;
