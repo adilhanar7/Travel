@@ -5,3 +5,8 @@
 @function vh($value, $base: 1024) {
     @return $value / $base * 100vh;
 }
+
+// it's for mobile version
+@function vmin($value, $base: 375) {
+    @return $value / $base * 100vmin;
+}

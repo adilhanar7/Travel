@@ -10,30 +10,32 @@
             position: absolute;
             left: 50%;
             margin-top: 2%;
-            transform: translateX(-50%);  
-        svg:last-child:hover path{ 
-                fill: red;
-        }
-        svg:first-child:hover path{ 
-                    fill: rgb(43, 189, 247);
+            transform: translateX(-50%); 
+            a:last-child:hover svg path{ 
+                    fill: red;
             }
-        svg:nth-child(2):hover path{ 
-                fill: rgb(47, 0, 255);
-        }
-        svg:nth-child(3):hover path{ 
-            fill: rgb(255, 82, 148);
-            background-color: rgb(2, 34, 177);
-        }
-        svg:nth-child(4):hover path{ 
-            fill: rgb(252, 238, 51);
-         }
-        }
-        svg{
-            padding-left: vw(35);
-            path{
-                transition: 0.5s;
+            a:first-child:hover svg  path{ 
+                        fill: rgb(43, 189, 247);
             }
-        }
+            a:nth-child(2):hover svg path{ 
+                    fill: rgb(47, 0, 255);
+            }
+            a:nth-child(3):hover svg path{ 
+                fill: rgb(255, 82, 148);
+                background-color: rgb(2, 34, 177);
+            }
+            a:nth-child(4):hover svg  path{ 
+                fill: rgb(252, 238, 51);
+             }
+             a{
+                svg{
+                    padding-left: vw(35);
+                path{
+                    transition: 0.5s;
+                }
+                }
+            }
+        } 
     }
     &__row{
     padding: vw(78) 0;
