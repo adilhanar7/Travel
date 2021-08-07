@@ -12,7 +12,7 @@
 @import './sections/Thousand';
 @import './sections/Comment';
 @import './sections/stories';
-
+@import './sections/modal-windows';
 
 
 .row{
@@ -105,5 +105,97 @@ button{
         color: $text-gray-blue79;
         max-width: vw(370);
         flex-wrap: wrap;
+    }
+}
+.title{
+    @include fontInter(vw(36),bold,vw(50));
+    color: $text-orange;
+    mix-blend-mode: normal;
+}
+
+@media screen and(max-width:1024px){
+    .container{
+        max-width: vmin(1210);
+        margin: 0 auto;
+    }
+    .col-4{
+        width: 100%;
+    }
+    .View-all{
+        @include flex(flex-start);
+        .View__title{
+            @include fontPlayfairDisplay(vmin(36),bold,vmin(50));
+            color: $text-black;
+            mix-blend-mode: normal;
+        }
+        .View__link{
+            @include fontInter(vmin(17),vmin(600),vmin(60));
+            align-items: center;
+            display: flex;
+            color:$text-orange;
+            mix-blend-mode: normal;
+            cursor: pointer;
+            margin-left: 60%;
+            svg{
+              margin-left: vmin(13);  
+            }
+        }
+    }
+    .View__link{
+        position: absolute !important;
+        bottom: 105% !important;
+        @include fontInter(vmin(17),vmin(600),vmin(60));
+        align-items: center;
+        display: flex;
+        color:$text-orange;
+        mix-blend-mode: normal;
+        cursor: pointer;
+        margin-left: 90%!important;
+        svg{
+            margin-left: vmin(13);  
+        }
+    }
+    .circle{
+        border:vmin(8) solid    #57D2A3;
+        width: vmin(20);
+        height: vmin(20);   
+        border-radius: 50%;
+    }
+    .text{
+        @include fontInter(vmin(15),normal,vmin(26));
+        color: $text-gray-blue79;
+        mix-blend-mode: normal;
+        position: relative;
+    }
+    .orange-btn{
+        @include fontInter(vmin(20),vmin(600),vmin(25));
+        background:$bg-orange ;
+        border-radius: vmin(8);
+        border: 0;
+        color: $text-white;
+        width: vmin(150);
+        height: vmin(40);
+        &:hover{
+            background: lighten($bg-orange , 10%);
+        }
+    }
+    .Interest {
+        max-width: vmin(400);
+        h2{
+        @include fontPlayfairDisplay(vmin(36),bold,vmin(50));
+        color: $text-black;
+        mix-blend-mode: normal;
+        }
+        p{
+            @include fontMulish(vmin(17),vmin(300),vmin(30));
+            color: $text-gray-blue79;
+            max-width: vmin(370);
+            flex-wrap: wrap;
+        }
+    }
+    .title{
+        @include fontInter(vmin(36),bold,vmin(50));
+        color: $text-orange;
+        mix-blend-mode: normal;
     }
 }
