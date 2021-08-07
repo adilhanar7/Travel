@@ -113,7 +113,7 @@ button{
     mix-blend-mode: normal;
 }
 
-@media screen and(max-width:1024px){
+@media screen and(max-width:1100px){
     .container{
         max-width: vmin(1210);
         margin: 0 auto;
@@ -143,16 +143,22 @@ button{
     }
     .View__link{
         position: absolute !important;
-        bottom: 105% !important;
+        bottom: 90% !important;
         @include fontInter(vmin(17),vmin(600),vmin(60));
         align-items: center;
         display: flex;
         color:$text-orange;
         mix-blend-mode: normal;
         cursor: pointer;
-        margin-left: 90%!important;
+        margin-left: vmin(20) !important;
+        &:active{
+            svg{
+            margin-left: vmin(20);  
+            }
+        }
         svg{
             margin-left: vmin(13);  
+            transition: 0.6s;
         }
     }
     .circle{
@@ -180,14 +186,14 @@ button{
         }
     }
     .Interest {
-        max-width: vmin(400);
+        min-width: 100%;
         h2{
         @include fontPlayfairDisplay(vmin(36),bold,vmin(50));
         color: $text-black;
         mix-blend-mode: normal;
         }
         p{
-            @include fontMulish(vmin(17),vmin(300),vmin(30));
+            @include fontMulish(vmin(17),vmin(600),vmin(30));
             color: $text-gray-blue79;
             max-width: vmin(370);
             flex-wrap: wrap;

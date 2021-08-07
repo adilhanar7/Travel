@@ -15,4 +15,13 @@ $('.item__slider').slick({
     arrows:  true,
     nextArrow:'<a class="View__link"><span>View all</span><svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5.5L1 10" stroke="#FB8F1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>',
     prevArrow:'',
+    responsive:[
+        {
+            breakpoint:1100,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+            }
+        }
+    ]
 });

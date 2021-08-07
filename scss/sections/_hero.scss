@@ -120,3 +120,130 @@
 		height: vw(600);
 		width: vw(550);
 }
+
+
+@media screen and (max-width:1100px){
+	.hero{
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding: vmin(30);
+		.circle{
+		 position: absolute;
+		 transform: translateX(-50%);
+		 left: 70%;
+		 bottom: 0;
+		}
+	}
+	.Explore-cross{
+		position: absolute;
+		margin-right: vmin(300);
+		width: vmin(41);
+		height: vmin(41);
+		margin-left: 39%;
+		margin-top: 0;
+		top: vmin(145);
+	}
+	.Explore{
+		display: block;
+		position: relative;
+		padding-top: vmin(100);
+		.circle{
+			position: absolute;
+			left: vmin(-60);
+			top: 60%;
+		}
+		&:last-child{
+			margin-left: vmin(170);
+		}
+		h1{
+			font-family: 'Playfair Display';
+			font-style: normal;
+			@include fontInter(vmin(64),bold,vmin(80));
+			color:$text-black;
+			mix-blend-mode: normal;
+			z-index: 100;
+			margin-bottom: vmin(70);
+		}
+		h2{
+			@include fontInter(vmin(22),vmin(900),vmin(10));
+			color:$text-black;
+			position: relative;
+			&::before{
+			content: '';
+			height: vmin(3);
+			width: 6%;
+			position: absolute;
+			bottom: vmin(-30);
+			left: 0;
+			background: black;
+			border-radius: 20%;
+			animation: line-before 3s ease-in-out forwards;
+			}
+			@keyframes line-before  {
+				0%{
+					width: 2%;
+				}
+				50%{
+					width: 25%;
+				}
+				100%{
+					width: 7%;
+				}
+			}
+	  }
+	  .Explore__form{
+		  max-width: vmin(500);
+		  flex-wrap: wrap;
+		  margin-top: vmin(50);
+		  select{
+			padding: vmin(10);
+			border: vmin(0.8) solid #AFB0B9;
+			box-sizing: border-box;
+			border-radius: vmin(6);
+			width: vmin(220);
+			height: vmin(52);
+			margin-top: vmin(20);
+			@include fontInter(vmin(15),normal,vmin(32));
+			color: #4A4C53;
+			mix-blend-mode: normal;
+			outline: none;
+			overflow: auto;
+			cursor: pointer;
+			transition: 0.7s;
+			&:hover{
+				margin-left: vmin(30);
+			}
+		  }
+		  button{
+			background:$bg-orange;
+			border: none;
+			border-radius: vmin(8);
+			font-family: 'Mulish';
+			font-style: normal;
+			@include fontInter(vmin(18),bold,vmin(25));
+			color: $text-white;
+			mix-blend-mode: normal;
+			width: vmin(180);
+			height: vmin(52);
+			padding: 0;
+			top: vmin(51);
+			position: relative;
+			transition: 0.5s;
+			cursor: pointer;
+			&:hover{
+				background: lighten($bg-orange , 10%);
+			}
+		  }
+	  }
+	}
+	.travel-img{
+		z-index: -2;	
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		height: vmin(350);
+		width: vmin(350);
+		opacity: 0.3;
+	}
+}
