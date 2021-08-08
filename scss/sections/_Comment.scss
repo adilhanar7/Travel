@@ -258,4 +258,10 @@
         right: vmin(124);
         z-index: 1;
     }
+    .prev.activePrevNext{
+       display: none;
+    }
+    .next.activePrevNext{
+       display: none;
+    }
 }
