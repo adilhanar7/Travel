@@ -17,7 +17,7 @@ $('.item__slider').slick({
     prevArrow:'',
     responsive:[
         {
-            breakpoint:1100,
+            breakpoint: 1030,
             settings: {
                 slidesToScroll: 1,
                 slidesToShow: 1,

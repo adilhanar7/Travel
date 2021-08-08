@@ -197,7 +197,7 @@
   background: #fca84f;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .header {
     font-family: 'Inter';
   }
@@ -483,7 +483,7 @@
   line-height: 1.875vw;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .footer {
     background-color: #F9F9FB;
     width: 100%;
@@ -495,6 +495,7 @@
     position: relative;
   }
   .footer__bottom-icons {
+    width: 90%;
     position: absolute;
     left: 50%;
     margin-top: 2%;
@@ -543,19 +544,23 @@
             flex-direction: column;
   }
   .footer__top .footer__description {
+    padding: 13.33333vmin 7.73333vmin;
     display: block;
   }
   .footer__top .footer__description-text {
     position: relative;
-    right: 21.33333vmin;
+    right: 26.13333vmin;
   }
   .footer__top .footer__features {
     margin-left: 0vmin;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__top .footer__features .footer__list {
+    width: 25%;
     list-style-type: none;
     margin-left: 26.66667vmin;
   }
@@ -752,7 +757,7 @@
   width: 34.375vw;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -946,7 +951,7 @@
   position: absolute;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .New-Explore {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1056,7 +1061,7 @@
   padding: 3.125vw 0;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .destinations {
     display: block;
     margin-bottom: 5.33333vmin;
@@ -1149,7 +1154,7 @@
   width: 37.4375vw;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .Thousand {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1352,7 +1357,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .Comment {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1598,7 +1603,7 @@
   padding: 6.25vw 0;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .Stories__row {
     display: block;
     position: relative;
@@ -1618,7 +1623,7 @@
     margin-bottom: 5.33333vmin;
   }
   .Stories .row {
-    left: 0;
+    left: 14.4vmin;
   }
   .Stories .row .col-4 {
     -webkit-transition: 0.5s;
@@ -2055,7 +2060,7 @@ button {
   mix-blend-mode: normal;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .container {
     max-width: 322.66667vmin;
     margin: 0 auto;
@@ -2104,7 +2109,7 @@ button {
   }
   .View__link {
     position: absolute !important;
-    bottom: 90% !important;
+    bottom: 97% !important;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 160vmin;
@@ -2178,7 +2183,7 @@ button {
     font-size: 4.53333vmin;
     line-height: 8vmin;
     color: #7D7987;
-    max-width: 98.66667vmin;
+    max-width: 96vmin;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

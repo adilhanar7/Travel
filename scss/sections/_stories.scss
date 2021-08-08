@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1024px){
     .Stories__row{
         display: block;
         position: relative;
@@ -84,7 +84,7 @@
             }
         }
         .row{
-            left: 0;
+            left: vmin(54);
             .col-4{
                 transition: 0.5s;
                 &:hover{
