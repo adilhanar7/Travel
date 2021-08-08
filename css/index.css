@@ -534,6 +534,9 @@
   .footer__row:last-child {
     padding: 8.8vmin 0;
   }
+  .footer__row hr {
+    max-width: 100%;
+  }
   .footer__top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1516,6 +1519,12 @@
     right: 33.06667vmin;
     z-index: 1;
   }
+  .prev.activePrevNext {
+    display: none;
+  }
+  .next.activePrevNext {
+    display: none;
+  }
 }
 
 .Stories__row {
@@ -1893,6 +1902,205 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 3.125vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 2;
+    display: none;
+  }
+  .Login-modal {
+    background: #ffffff;
+    padding: 6.66667vmin 5.33333vmin;
+    position: fixed;
+    top: -50%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 2.66667vmin;
+    width: 80vmin;
+    opacity: 0;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    z-index: 10;
+  }
+  .Login-modal__top {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 5.33333vmin;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+  }
+  .Login-modal__top .Login__close {
+    background: #ffffff;
+    border-radius: 25%;
+    height: 13.33333vmin;
+    width: 13.33333vmin;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.8vmin solid #FB8F1D;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .Login-modal__top .Login__close svg {
+    -webkit-transform: rotate(-42deg);
+            transform: rotate(-42deg);
+  }
+  .Login-modal__top .Login__close svg path {
+    fill: #cfccccce;
+  }
+  .Login-modal__top .Login__close:hover {
+    background: #FB8F1D;
+    border: 0.8vmin solid #ebebeb;
+  }
+  .Login-modal__top .Login__close:hover svg path {
+    fill: rgba(116, 116, 116, 0.63);
+  }
+  .Login-modal .form__login {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Login-modal .form__login input {
+    margin-top: 5.33333vmin;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 4vmin;
+    line-height: 6.66667vmin;
+    padding: 2.66667vmin;
+    outline: none;
+    border: 0.26667vmin solid #848484;
+    border-radius: 2.66667vmin;
+  }
+  .Login-modal .form__login .orange-btn {
+    margin-top: 5.33333vmin;
+    margin-left: 21.33333vmin;
+  }
+  .Login-modal .Login__description {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 13.33333vmin;
+  }
+  .Register-modal {
+    background: #ffffff;
+    padding: 6.66667vmin 5.33333vmin;
+    position: fixed;
+    top: -50%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 2.66667vmin;
+    width: 80vmin;
+    opacity: 0;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    z-index: 10;
+  }
+  .Register-modal__top {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 5.33333vmin;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+  }
+  .Register-modal__top .Register__close {
+    background: #ffffff;
+    border-radius: 25%;
+    height: 13.33333vmin;
+    width: 13.33333vmin;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.8vmin solid #FB8F1D;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .Register-modal__top .Register__close svg {
+    -webkit-transform: rotate(-42deg);
+            transform: rotate(-42deg);
+  }
+  .Register-modal__top .Register__close svg path {
+    fill: #cfccccce;
+  }
+  .Register-modal__top .Register__close:hover {
+    background: #FB8F1D;
+    border: 0.8vmin solid #ebebeb;
+  }
+  .Register-modal__top .Register__close:hover svg path {
+    fill: rgba(116, 116, 116, 0.63);
+  }
+  .Register-modal .form__Register {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Register-modal .form__Register input {
+    margin-top: 5.33333vmin;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 4vmin;
+    line-height: 6.66667vmin;
+    padding: 2.66667vmin;
+    outline: none;
+    border: 0.26667vmin solid #848484;
+    border-radius: 2.66667vmin;
+  }
+  .Register-modal .form__Register .orange-btn {
+    margin-top: 5.33333vmin;
+    margin-left: 21.33333vmin;
+  }
+  .Register-modal .Register__description {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 13.33333vmin;
+  }
 }
 
 .row {
