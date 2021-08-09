@@ -43,7 +43,7 @@
 		top: vw(45);
 		display: flex;
 		.nav{
-			margin-left: vw(400);
+			margin-left: vw(200);
 		}
 		.header__reg-log{
 			display: flex;
@@ -88,7 +88,7 @@
 		position: fixed;
 		align-items: center;
 		left: 0;
-		padding:vmin(20) vmin(13.5);
+		padding:vmin(5) vmin(13.5);
 		width: 100%;
 		background-color: rgb(238, 234, 234);
 		height: vmin(50);
@@ -99,7 +99,7 @@
 			flex-direction: column;
 			list-style-type: none;
 			&-item{
-				margin-top: vmin(70);
+				margin-top: vmin(30);
 				z-index: 2;
 				.header__list-link{
 				@include fontInter(vmin(20),normal,vmin(19));
@@ -114,7 +114,7 @@
 			 }	
 			}
 			&-item:first-child{
-				margin-top: vmin(70);
+				margin-top: vmin(30);
 				z-index: 10;
 				cursor: pointer;
 				.header__list-link{
@@ -143,7 +143,7 @@
 			order: 1;
 			position: absolute;
 			top: vmin(89);
-			padding-top: vmin(50);
+			padding: vmin(50) vmin(10);
 			height: 100vh;
 			width: 100%;
 			left: 200%;
